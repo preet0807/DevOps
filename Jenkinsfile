@@ -10,7 +10,7 @@ pipeline{
 
         stage('Build') {
             steps {
-                bat 'cd hms_py'
+                
                 bat 'python app.py'
             }
         }
