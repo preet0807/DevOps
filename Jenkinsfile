@@ -8,11 +8,10 @@ pipeline{
             }
         }
 
-        stage('Build') {
+        stage('Unit Testing') {
             steps {
                 
-                
-                sh 'python app.py'
+                sh 'mvn test'
             }
         }
     }
