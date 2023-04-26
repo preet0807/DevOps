@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 pipeline {
     agent any
     
@@ -52,6 +53,8 @@ pipeline {
     }
 }
 =======
+=======
+>>>>>>> f914cc6a238f58ff709a293d6149226e7d50e0c4
 pipeline {
     agent any
     
@@ -104,4 +107,7 @@ pipeline {
         }
     }
 }
+<<<<<<< HEAD
+>>>>>>> f914cc6a238f58ff709a293d6149226e7d50e0c4
+=======
 >>>>>>> f914cc6a238f58ff709a293d6149226e7d50e0c4
