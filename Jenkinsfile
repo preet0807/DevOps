@@ -1,7 +1,8 @@
 pipeline {
     agent any
-     tools {
-    maven 'maven 3.9.1' 
+    
+     environment {
+    PATH= /C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1:$PATH 
        }
 
     
