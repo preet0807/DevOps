@@ -13,29 +13,13 @@ pipeline {
             }
         }
         
-        // stage ('UNIT testing'){
-        //     steps{
-        //         bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn verify -DskipUnitTests'
-        //     }
-        
-        // }
+       
         stage('Build'){
             steps{
-                bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn clean install'
+                sh '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn clean install'
             }
         }
-        //  stage('Test'){
-        //     steps{
-        //         bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn test'
-    
-        // }
-        //  }
-        //   stage('Deploy'){
-        //     steps{
-        //         bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn deploy'
-    
-        // }
-          
+      
           }
     }
 
