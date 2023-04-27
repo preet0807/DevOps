@@ -21,7 +21,7 @@ pipeline {
         // }
         stage('Build'){
             steps{
-                bat 'C:/Users/preet/AppData/Local/Programs/Python/Python311/Scripts/python app.py'
+                bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn clean install'
             }
         }
         //  stage('Test'){
@@ -37,8 +37,8 @@ pipeline {
         // }
           
           }
-    
-}
+    }
+
 
 
         
