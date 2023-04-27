@@ -19,12 +19,7 @@ pipeline {
         build job: 'maven-job', propagate: true, wait: true
       }
     }
-        stage('Build'){
-            
-            steps{
-                bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/bin/mvn clean install'
-            }
-        }
+       
          
           }
 }
