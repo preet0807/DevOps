@@ -17,7 +17,7 @@ pipeline {
        
         stage('Build'){
             steps{
-                sh '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn clean install'
+                bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/bin/mvn clean install'
             }
         }
       
