@@ -13,31 +13,31 @@ pipeline {
             }
         }
         
-        stage ('UNIT testing'){
-            steps{
-                bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn verify -DskipUnitTests'
-            }
+        // stage ('UNIT testing'){
+        //     steps{
+        //         bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn verify -DskipUnitTests'
+        //     }
         
-        }
-        stage('Maven Build'){
+        // }
+        stage('Build'){
             steps{
-                bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn clean package'
+                bat 'C:/Users/preet/AppData/Local/Programs/Python/Python311/Scripts/python app.py'
             }
         }
-         stage('Test'){
-            steps{
-                bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn test'
+        //  stage('Test'){
+        //     steps{
+        //         bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn test'
     
-        }
-         }
-          stage('Deploy'){
-            steps{
-                bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn deploy'
+        // }
+        //  }
+        //   stage('Deploy'){
+        //     steps{
+        //         bat '/C:/Program Files/apache-maven-3.9.1-bin/apache-maven-3.9.1/mvn deploy'
     
-        }
+        // }
           
           }
-    }
+    
 }
 
 
