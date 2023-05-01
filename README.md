@@ -2,9 +2,6 @@
 
  Use this guide. Attributions are appreciated._
 
-### Copyright
-
-Copyright (c) 2014-2015 [Tushar Borole](http://www.tusharborole.com)
 
 ### (The MIT License)
 Permission is hereby granted, free of charge, to any person obtaining
